@@ -25,13 +25,13 @@ const JobPage = () => {
     fetchJob();
   }, []); */
 
-  return <h1>{job.title}</h1>
+  return <h1>{job.title}</h1>;
 }
 
-const jobLoader = async ({params}) => {
+/* const jobLoader = async ({params}) => {
   const res = await fetch(`/api/jobs/${params.id}`);
   const data = await res.json();
   return data;
 }
 
-export {JobPage as default, jobLoader}
+export {JobPage as default, jobLoader} */
